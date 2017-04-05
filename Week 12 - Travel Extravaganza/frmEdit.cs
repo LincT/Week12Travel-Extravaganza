@@ -19,7 +19,9 @@ namespace Week_12___Travel_Extravaganza
         }
 
         string strButtonText;
-        SortedList<string, string> dataList = new SortedList<string, string> { };
+        SortedList<string, string> tabFlights = new SortedList<string, string> { };
+        SortedList<string, string> tabHotels = new SortedList<string, string> { };
+        SortedList<string, string> tabEvents = new SortedList<string, string> { };
 
         private void btnForm_Click(object sender, EventArgs e)
         {
@@ -37,47 +39,51 @@ namespace Week_12___Travel_Extravaganza
                 case "Flights":
                     if (strButtonText == "Okay")
                     {
-                        this.Tag = "test";
-                        Debug.Write("case 0" + Convert.ToString(this.Tag) + "\n");
+                        tabFlights.Add("tabName", selectedTab);
+                        tabFlights.Add("date", dtpFlights.Text);
+                        tabFlights.Add("title", "Flight");
+                        tabFlights.Add("origin", txtOriginAP.Text);
+                        tabFlights.Add("destination", txtDestinationAP.Text);
+                        this.Tag = tabFlights;
                     }
                     else
                     {
 
                     }
                     break;
-                case "1":
-                    if (strButtonText == "")
+                case "Hotels":
+                    if (strButtonText == "Okay")
                     {
-
+                        tabHotels.Add("tabName", selectedTab);
+                        tabHotels.Add("checkIn", dtpCheckIn.Text);
+                        tabHotels.Add("hotelName", txtHotel.Text);
+                        tabHotels.Add("address", txtAddress.Text);
+                        tabHotels.Add("guestsNumber", cbGuests.Text);
+                        tabHotels.Add("checkOut", dtpCheckOut.Text);
+                        this.Tag = tabHotels;
                     }
                     else
                     {
-
+                        // Do Nothing...
                     }
                     break;
                 case "Events":
                     if (strButtonText == "Okay")
                     {
-                        dataList.Add("type",tabControl1.SelectedTab.Text);
-                        dataList.Add("date", dtpEventDate.Text);
-                        dataList.Add("Title", "");
-                        dataList.Add("Details", "");
-                        this.Tag = dataList;
-
+                        tabEvents.Add("tabName", selectedTab);
+                        tabEvents.Add("date", dtpEvents.Text);
+                        tabEvents.Add("title", txtEventTitle.Text);
+                        tabEvents.Add("details", txtEventDetails.Text);
+                        this.Tag = tabEvents;
                     }
                     else
                     {
-                        
+
                     }
                     break;
                 default:
                     break;
             }
-        }
-
-        private void frmEdit_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

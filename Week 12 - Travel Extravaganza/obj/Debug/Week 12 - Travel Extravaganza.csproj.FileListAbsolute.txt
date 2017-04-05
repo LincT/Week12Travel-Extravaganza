@@ -28,3 +28,13 @@ C:\Users\Linc\Documents\Visual Studio 2015\Projects\Week 12 - Travel Extravaganz
 C:\Users\Linc\Documents\Visual Studio 2015\Projects\Week 12 - Travel Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week_12___Travel_Extravaganza.frmEdit.resources
 C:\Users\Linc\Documents\Visual Studio 2015\Projects\Week 12 - Travel Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week_12___Travel_Extravaganza.Properties.Resources.resources
 C:\Users\Linc\Documents\Visual Studio 2015\Projects\Week 12 - Travel Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.csproj.GenerateResource.Cache
+D:\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\bin\Debug\Week 12 - Travel Extravaganza.exe.config
+D:\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.exe
+D:\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.pdb
+D:\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\bin\Debug\Week 12 - Travel Extravaganza.exe
+D:\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\bin\Debug\Week 12 - Travel Extravaganza.pdb
+D:\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.csprojResolveAssemblyReference.cache
+D:\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week_12___Travel_Extravaganza.frmMain.resources
+D:\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week_12___Travel_Extravaganza.frmEdit.resources
+D:\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week_12___Travel_Extravaganza.Properties.Resources.resources
+D:\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.csproj.GenerateResource.Cache
