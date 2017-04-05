@@ -19,7 +19,7 @@ namespace Week_12___Travel_Extravaganza
         }
 
         string strButtonText;
-        SortedList<string, string> tabFlights = new SortedList<string, string> { };
+        SortedList<string, string> dataList = new SortedList<string, string> { };
 
         private void btnForm_Click(object sender, EventArgs e)
         {
@@ -37,21 +37,8 @@ namespace Week_12___Travel_Extravaganza
                 case "Flights":
                     if (strButtonText == "Okay")
                     {
-                        tabFlights.Add("tabName", selectedTab);
-                        tabFlights.Add("date", dtpFlights.Text);
-                        tabFlights.Add("title", "Flight");
-                        tabFlights.Add("origin", txtOriginAP.Text);
-                        tabFlights.Add("destination", txtDestinationAP.Text);
-
-                        //tabFlights.Add(selectedTab);
-                        //tabFlights.Add(dtpFlights.Text);
-                        //tabFlights.Add("Flight");
-                        //tabFlights.Add(txtOriginAP.Text);
-                        //tabFlights.Add(txtDestinationAP.Text);
-
-                        this.Tag = tabFlights;
-                        
-                        //Debug.Write("case 0" + Convert.ToString(this.Tag) + "\n");
+                        this.Tag = "test";
+                        Debug.Write("case 0" + Convert.ToString(this.Tag) + "\n");
                     }
                     else
                     {
@@ -68,19 +55,29 @@ namespace Week_12___Travel_Extravaganza
 
                     }
                     break;
-                case "2":
-                    if (strButtonText == "")
+                case "Events":
+                    if (strButtonText == "Okay")
                     {
+                        dataList.Add("type",tabControl1.SelectedTab.Text);
+                        dataList.Add("date", txtEventDate.Text);
+                        dataList.Add("Title", txtEventTitle.Text);
+                        dataList.Add("Details", txtEventDetails.Text);
+                        this.Tag = dataList;
 
                     }
                     else
                     {
-
+                        
                     }
                     break;
                 default:
                     break;
             }
+        }
+
+        private void frmEdit_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
