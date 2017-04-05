@@ -19,6 +19,7 @@ namespace Week_12___Travel_Extravaganza
         }
 
         string strButtonText;
+        SortedList<string, string> tabFlights = new SortedList<string, string> { };
 
         private void btnForm_Click(object sender, EventArgs e)
         {
@@ -36,8 +37,21 @@ namespace Week_12___Travel_Extravaganza
                 case "Flights":
                     if (strButtonText == "Okay")
                     {
-                        this.Tag = "test";
-                        Debug.Write("case 0" + Convert.ToString(this.Tag) + "\n");
+                        tabFlights.Add("tabName", selectedTab);
+                        tabFlights.Add("date", dtpFlights.Text);
+                        tabFlights.Add("title", "Flight");
+                        tabFlights.Add("origin", txtOriginAP.Text);
+                        tabFlights.Add("destination", txtDestinationAP.Text);
+
+                        //tabFlights.Add(selectedTab);
+                        //tabFlights.Add(dtpFlights.Text);
+                        //tabFlights.Add("Flight");
+                        //tabFlights.Add(txtOriginAP.Text);
+                        //tabFlights.Add(txtDestinationAP.Text);
+
+                        this.Tag = tabFlights;
+                        
+                        //Debug.Write("case 0" + Convert.ToString(this.Tag) + "\n");
                     }
                     else
                     {
