@@ -1,2 +1,11 @@
 c:\users\linc\documents\visual studio 2015\Projects\Week 12 - Travel Extravaganza\Week 12 - Travel Extravaganza\bin\Debug\Week 12 - Travel Extravaganza.exe.config
 C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\bin\Debug\Week 12 - Travel Extravaganza.exe.config
+C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\bin\Debug\Week 12 - Travel Extravaganza.exe
+C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\bin\Debug\Week 12 - Travel Extravaganza.pdb
+C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.csprojResolveAssemblyReference.cache
+C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week_12___Travel_Extravaganza.frmMain.resources
+C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week_12___Travel_Extravaganza.frmEdit.resources
+C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week_12___Travel_Extravaganza.Properties.Resources.resources
+C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.csproj.GenerateResource.Cache
+C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.exe
+C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.pdb
