@@ -18,6 +18,7 @@ namespace Week_12___Travel_Extravaganza
             InitializeComponent();
         }
 
+        List<string> lstTabHotels = new List<string>();
         string strButtonText;
 
         private void btnForm_Click(object sender, EventArgs e)
@@ -44,14 +45,28 @@ namespace Week_12___Travel_Extravaganza
 
                     }
                     break;
-                case "1":
-                    if (strButtonText == "")
+                case "Hotels":
+                    if (strButtonText == "Okay")
                     {
-
+                        // Tab
+                        this.lstTabHotels.Add(selectedTab);
+                        // Check In
+                        this.lstTabHotels.Add(dtpCheckIn.Text);
+                        // Hotel Name
+                        this.lstTabHotels.Add(txtHotelName.Text);
+                        // Hotel Address
+                        this.lstTabHotels.Add(txtAddress.Text);
+                        // Number of Guests
+                        this.lstTabHotels.Add(cbGuests.Text);
+                        // Check Out
+                        this.lstTabHotels.Add(dtpCheckOut.Text);
+                        foreach (string item in lstTabHotels) {
+                            Debug.Write(item + "\n");
+                        }
                     }
                     else
                     {
-
+                        //Do Nothing...
                     }
                     break;
                 case "2":
