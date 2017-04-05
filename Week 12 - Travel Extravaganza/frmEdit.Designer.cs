@@ -30,11 +30,11 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDestinationAP = new System.Windows.Forms.TextBox();
+            this.txtOriginAP = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFlights = new System.Windows.Forms.DateTimePicker();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnEditCancel = new System.Windows.Forms.Button();
@@ -59,11 +59,11 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.txtDestinationAP);
+            this.tabPage1.Controls.Add(this.txtOriginAP);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.dateTimePicker1);
+            this.tabPage1.Controls.Add(this.dtpFlights);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -72,19 +72,19 @@
             this.tabPage1.Text = "Flights";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtDestinationAP
             // 
-            this.textBox2.Location = new System.Drawing.Point(119, 76);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtDestinationAP.Location = new System.Drawing.Point(119, 76);
+            this.txtDestinationAP.Name = "txtDestinationAP";
+            this.txtDestinationAP.Size = new System.Drawing.Size(100, 20);
+            this.txtDestinationAP.TabIndex = 4;
             // 
-            // textBox1
+            // txtOriginAP
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtOriginAP.Location = new System.Drawing.Point(119, 50);
+            this.txtOriginAP.Name = "txtOriginAP";
+            this.txtOriginAP.Size = new System.Drawing.Size(100, 20);
+            this.txtOriginAP.TabIndex = 3;
             // 
             // label2
             // 
@@ -104,12 +104,12 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Origin Airport:";
             // 
-            // dateTimePicker1
+            // dtpFlights
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(18, 15);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(323, 20);
-            this.dateTimePicker1.TabIndex = 0;
+            this.dtpFlights.Location = new System.Drawing.Point(18, 15);
+            this.dtpFlights.Name = "dtpFlights";
+            this.dtpFlights.Size = new System.Drawing.Size(323, 20);
+            this.dtpFlights.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -180,10 +180,10 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btnEditCancel;
         private System.Windows.Forms.Button btnEditOkay;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFlights;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDestinationAP;
+        private System.Windows.Forms.TextBox txtOriginAP;
     }
 }
