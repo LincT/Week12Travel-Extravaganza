@@ -9,3 +9,5 @@ C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravagan
 C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.csproj.GenerateResource.Cache
 C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.exe
 C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.pdb
+C:\Users\Linc\Documents\Visual Studio 2015\Projects\Week 12 - Travel Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.exe
+C:\Users\Linc\Documents\Visual Studio 2015\Projects\Week 12 - Travel Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.pdb

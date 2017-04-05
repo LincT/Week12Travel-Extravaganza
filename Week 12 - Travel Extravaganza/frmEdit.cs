@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,11 @@ namespace Week_12___Travel_Extravaganza
         public frmEdit()
         {
             InitializeComponent();
+        }
+
+        private void btnEditOkay_Click(object sender, EventArgs e)
+        {
+            switch ()
         }
     }
 }
