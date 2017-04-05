@@ -19,32 +19,34 @@ namespace Week_12___Travel_Extravaganza
         }
 
         string strButtonText;
-        SortedList<string, string> tabFlights = new SortedList<string, string> { };
-        SortedList<string, string> tabHotels = new SortedList<string, string> { };
-        SortedList<string, string> tabEvents = new SortedList<string, string> { };
+        //SortedList<string, string> tabFlights = new SortedList<string, string> { };
+        //SortedList<string, string> tabHotels = new SortedList<string, string> { };
+        //SortedList<string, string> tabEvents = new SortedList<string, string> { };
+        SortedList<string, string> tabData = new SortedList<string, string> { };
 
         private void btnForm_Click(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
-            strButtonText = btn.Text;
+
+            strButtonText = ((Button)sender).Text;
             Debug.Write(strButtonText + "\n");
             this.Close();
         }
 
         private void frmEdit_FormClosing(object sender, FormClosingEventArgs e)
         {
+            Debug.Write("Sender:" + sender.ToString() + "\n");
             string selectedTab = tabControl1.SelectedTab.Text;
             switch (selectedTab)
             {
                 case "Flights":
                     if (strButtonText == "Okay")
                     {
-                        tabFlights.Add("tabName", selectedTab);
-                        tabFlights.Add("date", dtpFlights.Text);
-                        tabFlights.Add("title", "Flight");
-                        tabFlights.Add("origin", txtOriginAP.Text);
-                        tabFlights.Add("destination", txtDestinationAP.Text);
-                        this.Tag = tabFlights;
+                        tabData.Add("tabName", selectedTab);
+                        tabData.Add("date", dtpFlights.Text);
+                        tabData.Add("title", "Flight");
+                        tabData.Add("origin", txtOriginAP.Text);
+                        tabData.Add("destination", txtDestinationAP.Text);
+                        //this.Tag = tabFlights;
                     }
                     else
                     {
@@ -54,13 +56,13 @@ namespace Week_12___Travel_Extravaganza
                 case "Hotels":
                     if (strButtonText == "Okay")
                     {
-                        tabHotels.Add("tabName", selectedTab);
-                        tabHotels.Add("checkIn", dtpCheckIn.Text);
-                        tabHotels.Add("hotelName", txtHotel.Text);
-                        tabHotels.Add("address", txtAddress.Text);
-                        tabHotels.Add("guestsNumber", cbGuests.Text);
-                        tabHotels.Add("checkOut", dtpCheckOut.Text);
-                        this.Tag = tabHotels;
+                        tabData.Add("tabName", selectedTab);
+                        tabData.Add("checkIn", dtpCheckIn.Text);
+                        tabData.Add("hotelName", txtHotel.Text);
+                        tabData.Add("address", txtAddress.Text);
+                        tabData.Add("guestsNumber", cbGuests.Text);
+                        tabData.Add("checkOut", dtpCheckOut.Text);
+                        //this.Tag = tabHotels;
                     }
                     else
                     {
@@ -70,11 +72,11 @@ namespace Week_12___Travel_Extravaganza
                 case "Events":
                     if (strButtonText == "Okay")
                     {
-                        tabEvents.Add("tabName", selectedTab);
-                        tabEvents.Add("date", dtpEvents.Text);
-                        tabEvents.Add("title", txtEventTitle.Text);
-                        tabEvents.Add("details", txtEventDetails.Text);
-                        this.Tag = tabEvents;
+                        tabData.Add("tabName", selectedTab);
+                        tabData.Add("date", dtpEvents.Text);
+                        tabData.Add("title", txtEventTitle.Text);
+                        tabData.Add("details", txtEventDetails.Text);
+                        //this.Tag = tabEvents;
                     }
                     else
                     {
@@ -84,6 +86,7 @@ namespace Week_12___Travel_Extravaganza
                 default:
                     break;
             }
+            this.Tag = tabData;
         }
     }
 }

@@ -18,7 +18,8 @@ namespace Week_12___Travel_Extravaganza
             InitializeComponent();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e) {
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
             Form frmEdit = new frmEdit();
             frmEdit.ShowDialog();
 
