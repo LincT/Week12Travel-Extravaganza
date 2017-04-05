@@ -19,6 +19,7 @@ namespace Week_12___Travel_Extravaganza
         }
 
         string strButtonText;
+        SortedList<string, string> dataList = new SortedList<string, string> { };
 
         private void btnForm_Click(object sender, EventArgs e)
         {
@@ -67,6 +68,11 @@ namespace Week_12___Travel_Extravaganza
                 default:
                     break;
             }
+        }
+
+        private void frmEdit_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
