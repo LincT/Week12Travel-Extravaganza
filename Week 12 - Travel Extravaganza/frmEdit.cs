@@ -24,7 +24,7 @@ namespace Week_12___Travel_Extravaganza
         {
             Button btn = (Button)sender;
             strButtonText = btn.Text;
-            MessageBox.Show(strButtonText);
+            Debug.Write(strButtonText + "\n");
             this.Close();
         }
 
@@ -37,7 +37,7 @@ namespace Week_12___Travel_Extravaganza
                     if (strButtonText == "Okay")
                     {
                         this.Tag = "test";
-                        MessageBox.Show("case 0" + Convert.ToString(this.Tag));
+                        Debug.Write("case 0" + Convert.ToString(this.Tag) + "\n");
                     }
                     else
                     {
