@@ -21,7 +21,7 @@ namespace Week_12___Travel_Extravaganza
         private void btnAdd_Click(object sender, EventArgs e) {
             Form frmEdit = new frmEdit();
             frmEdit.ShowDialog();
-            Debug.Write(Convert.ToString(frmEdit.Tag)+ "\n");
+            Debug.Write(string.Join(",",((SortedList<string,string>)frmEdit.Tag))+ "\n");
         }
     }
 }

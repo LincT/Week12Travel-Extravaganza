@@ -55,14 +55,19 @@ namespace Week_12___Travel_Extravaganza
 
                     }
                     break;
-                case "2":
-                    if (strButtonText == "")
+                case "Events":
+                    if (strButtonText == "Okay")
                     {
+                        dataList.Add("type",tabControl1.SelectedTab.Text);
+                        dataList.Add("date", txtEventDate.Text);
+                        dataList.Add("Title", txtEventTitle.Text);
+                        dataList.Add("Details", txtEventDetails.Text);
+                        this.Tag = dataList;
 
                     }
                     else
                     {
-
+                        
                     }
                     break;
                 default:
