@@ -9,3 +9,13 @@ C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravagan
 C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.csproj.GenerateResource.Cache
 C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.exe
 C:\Users\link\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.pdb
+C:\Users\dk2871bi\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\bin\Debug\Week 12 - Travel Extravaganza.exe.config
+C:\Users\dk2871bi\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.exe
+C:\Users\dk2871bi\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.pdb
+C:\Users\dk2871bi\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\bin\Debug\Week 12 - Travel Extravaganza.exe
+C:\Users\dk2871bi\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\bin\Debug\Week 12 - Travel Extravaganza.pdb
+C:\Users\dk2871bi\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.csprojResolveAssemblyReference.cache
+C:\Users\dk2871bi\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week_12___Travel_Extravaganza.frmMain.resources
+C:\Users\dk2871bi\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week_12___Travel_Extravaganza.frmEdit.resources
+C:\Users\dk2871bi\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week_12___Travel_Extravaganza.Properties.Resources.resources
+C:\Users\dk2871bi\Source\Repos\Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\obj\Debug\Week 12 - Travel Extravaganza.csproj.GenerateResource.Cache

@@ -20,6 +20,7 @@ namespace Week_12___Travel_Extravaganza
         private void btnAdd_Click(object sender, EventArgs e) {
             Form frmEdit = new frmEdit();
             frmEdit.ShowDialog();
+            MessageBox.Show(Convert.ToString(frmEdit.Tag));
         }
     }
 }
