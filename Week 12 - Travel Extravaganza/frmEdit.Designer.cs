@@ -37,10 +37,17 @@
             this.dtpFlights = new System.Windows.Forms.DateTimePicker();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.txtEventDetails = new System.Windows.Forms.TextBox();
+            this.txtEventTitle = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dtpEventDate = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnEditCancel = new System.Windows.Forms.Button();
             this.btnEditOkay = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -123,13 +130,65 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.txtEventDetails);
+            this.tabPage3.Controls.Add(this.txtEventTitle);
+            this.tabPage3.Controls.Add(this.label5);
+            this.tabPage3.Controls.Add(this.label4);
+            this.tabPage3.Controls.Add(this.dtpEventDate);
+            this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(365, 237);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.Text = "Events";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // txtEventDetails
+            // 
+            this.txtEventDetails.Location = new System.Drawing.Point(100, 69);
+            this.txtEventDetails.Multiline = true;
+            this.txtEventDetails.Name = "txtEventDetails";
+            this.txtEventDetails.Size = new System.Drawing.Size(200, 162);
+            this.txtEventDetails.TabIndex = 5;
+            // 
+            // txtEventTitle
+            // 
+            this.txtEventTitle.Location = new System.Drawing.Point(100, 43);
+            this.txtEventTitle.Name = "txtEventTitle";
+            this.txtEventTitle.Size = new System.Drawing.Size(200, 20);
+            this.txtEventTitle.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(17, 69);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(77, 20);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Event Details";
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(17, 43);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(77, 20);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Event Title";
+            // 
+            // dtpEventDate
+            // 
+            this.dtpEventDate.Location = new System.Drawing.Point(100, 17);
+            this.dtpEventDate.Name = "dtpEventDate";
+            this.dtpEventDate.Size = new System.Drawing.Size(200, 20);
+            this.dtpEventDate.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(17, 17);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 20);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Event Date";
             // 
             // btnEditCancel
             // 
@@ -168,6 +227,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -185,5 +246,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtDestinationAP;
         private System.Windows.Forms.TextBox txtOriginAP;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dtpEventDate;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtEventDetails;
+        private System.Windows.Forms.TextBox txtEventTitle;
     }
 }

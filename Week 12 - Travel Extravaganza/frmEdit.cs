@@ -59,9 +59,9 @@ namespace Week_12___Travel_Extravaganza
                     if (strButtonText == "Okay")
                     {
                         dataList.Add("type",tabControl1.SelectedTab.Text);
-                        dataList.Add("date", txtEventDate.Text);
-                        dataList.Add("Title", txtEventTitle.Text);
-                        dataList.Add("Details", txtEventDetails.Text);
+                        dataList.Add("date", dtpEventDate.Text);
+                        dataList.Add("Title", "");
+                        dataList.Add("Details", "");
                         this.Tag = dataList;
 
                     }
