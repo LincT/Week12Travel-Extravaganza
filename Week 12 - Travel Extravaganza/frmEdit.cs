@@ -20,7 +20,11 @@ namespace Week_12___Travel_Extravaganza
 
         private void btnEditOkay_Click(object sender, EventArgs e)
         {
-            switch ()
+            SortedList<string, string> frmData = new SortedList<string, string> { };
+            string dbgOut = "Control Values: " + dateTimePicker1.Text + "\n";
+            Debug.Write(dbgOut);
+
+
         }
     }
 }
