@@ -26,7 +26,6 @@ namespace Week_12___Travel_Extravaganza
 
         private void btnForm_Click(object sender, EventArgs e)
         {
-
             strButtonText = ((Button)sender).Text;
             Debug.Write(strButtonText + "\n");
             this.Close();
