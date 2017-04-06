@@ -73,8 +73,7 @@ namespace Week_12___Travel_Extravaganza
             {
                 if (eventData.Keys.Contains(formData["date"]))
                 {
-                    MessageBox.Show("Event Already Exists For Date\n" +
-                        "Please Consider Revising Entry");
+                    eventData[formData["date"]] = formData;
                 }
                 else
                 {eventData.Add(formData["date"], formData);}
@@ -85,8 +84,7 @@ namespace Week_12___Travel_Extravaganza
             {
                 if (eventData.Keys.Contains(formData["checkIn"]))
                 {
-                    MessageBox.Show("Event Already Exists For Date\n" +
-                        "Please Consider Revising Entry");
+                    eventData[formData["checkIn"]] = formData;
                 }
                 else
                 { eventData.Add(formData["checkIn"], formData); }
@@ -115,6 +113,7 @@ namespace Week_12___Travel_Extravaganza
                 {
                     if (selected.Contains(keySelected))
                     {
+                        
                         //eventData[key];
                         Form frmEdit = new frmEdit();
                         frmEdit.Tag = eventData[keySelected];
@@ -123,9 +122,10 @@ namespace Week_12___Travel_Extravaganza
                         if (frmEdit.DialogResult == DialogResult.OK)
                         {
                             Debug.Print(string.Join(",", eventData[keySelected].Values));
-                            eventData.Remove(keySelected.ToString());
-                            //addItem(frmEdit);
+                            
+                            addItem(frmEdit);
                         }
+                        break;
                     }
                 }
             }
