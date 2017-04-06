@@ -334,6 +334,7 @@
             this.Name = "frmEdit";
             this.Text = "frmEdit";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmEdit_FormClosing);
+            this.Load += new System.EventHandler(this.frmEdit_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

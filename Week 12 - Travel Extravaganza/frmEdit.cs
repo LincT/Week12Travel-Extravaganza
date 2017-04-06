@@ -19,9 +19,6 @@ namespace Week_12___Travel_Extravaganza
         }
 
         string strButtonText;
-        //SortedList<string, string> tabFlights = new SortedList<string, string> { };
-        //SortedList<string, string> tabHotels = new SortedList<string, string> { };
-        //SortedList<string, string> tabEvents = new SortedList<string, string> { };
         SortedList<string, string> tabData = new SortedList<string, string> { };
 
         private void btnForm_Click(object sender, EventArgs e)
@@ -46,6 +43,7 @@ namespace Week_12___Travel_Extravaganza
                         tabData.Add("origin", txtOriginAP.Text);
                         tabData.Add("destination", txtDestinationAP.Text);
                         //this.Tag = tabFlights;
+                        this.DialogResult = DialogResult.OK;
                     }
                     else
                     {
@@ -62,6 +60,7 @@ namespace Week_12___Travel_Extravaganza
                         tabData.Add("guestsNumber", cbGuests.Text);
                         tabData.Add("checkOut", dtpCheckOut.Text);
                         //this.Tag = tabHotels;
+                        this.DialogResult = DialogResult.OK;
                     }
                     else
                     {
@@ -76,6 +75,7 @@ namespace Week_12___Travel_Extravaganza
                         tabData.Add("title", txtEventTitle.Text);
                         tabData.Add("details", txtEventDetails.Text);
                         //this.Tag = tabEvents;
+                        this.DialogResult = DialogResult.OK;
                     }
                     else
                     {
@@ -86,6 +86,37 @@ namespace Week_12___Travel_Extravaganza
                     break;
             }
             this.Tag = tabData;
+        }
+
+        private void frmEdit_Load(object sender, EventArgs e)
+        {
+            if (this.Tag != null)
+            {
+                SortedList<string, string> inputData = new SortedList<string, string> { };
+                foreach (KeyValuePair<string, string> pair in readInput())
+                    inputData.Add(pair.Key,pair.Value);
+                switch (inputData["tabName"])
+                {
+                    case "Events":
+                        dtpEvents.Text = inputData["date"];
+                        txtEventTitle.Text = inputData["title"];
+                        txtEventDetails.Text = inputData["details"];
+                        break;
+                }
+
+            }
+            else { Debug.Write("frmEdit Null"); }
+        }
+        public SortedList<string,string> readInput()
+        {
+            SortedList<string, string> inData = new SortedList<string, string> { };
+            string resultDbg = "frmEdit readInput() = \n";
+            foreach(KeyValuePair<string,string> pair in (SortedList<string,string>)this.Tag)
+            {
+                resultDbg += pair.Key+ ": " + pair.Value + "\n";
+            }
+            Debug.Write(resultDbg);
+            return (SortedList<string, string>)this.Tag;
         }
     }
 }
