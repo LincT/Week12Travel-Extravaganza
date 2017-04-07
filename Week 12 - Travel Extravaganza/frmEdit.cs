@@ -42,7 +42,6 @@ namespace Week_12___Travel_Extravaganza
                         tabData.Add("title", "Flight");
                         tabData.Add("origin", txtOriginAP.Text);
                         tabData.Add("destination", txtDestinationAP.Text);
-                        //this.Tag = tabFlights;
                         this.DialogResult = DialogResult.OK;
                     }
                     else
@@ -59,7 +58,6 @@ namespace Week_12___Travel_Extravaganza
                         tabData.Add("address", txtAddress.Text);
                         tabData.Add("guestsNumber", cbGuests.Text);
                         tabData.Add("checkOut", dtpCheckOut.Text);
-                        //this.Tag = tabHotels;
                         this.DialogResult = DialogResult.OK;
                     }
                     else
@@ -74,7 +72,6 @@ namespace Week_12___Travel_Extravaganza
                         tabData.Add("date", dtpEvents.Text);
                         tabData.Add("title", txtEventTitle.Text);
                         tabData.Add("details", txtEventDetails.Text);
-                        //this.Tag = tabEvents;
                         this.DialogResult = DialogResult.OK;
                     }
                     else
@@ -101,6 +98,21 @@ namespace Week_12___Travel_Extravaganza
                         dtpEvents.Text = inputData["date"];
                         txtEventTitle.Text = inputData["title"];
                         txtEventDetails.Text = inputData["details"];
+                        tabControl1.SelectedTab = tabPage3;
+                        break;
+                    case "Flights":
+                        dtpFlights.Text = inputData["date"];
+                        txtOriginAP.Text = inputData["origin"];
+                        txtDestinationAP.Text = inputData["destination"];
+                        tabControl1.SelectedTab = tabPage1;
+                        break;
+                    case "Hotels":
+                        dtpCheckIn.Text = inputData["checkIn"];
+                        dtpCheckOut.Text = inputData["checkOut"];
+                        txtHotel.Text = inputData["hotelName"];
+                        txtAddress.Text = inputData["address"];
+                        cbGuests.Text = inputData["guestsNumber"];
+                        tabControl1.SelectedTab = tbHotels;
                         break;
                 }
 

@@ -13,10 +13,8 @@ namespace Week_12___Travel_Extravaganza
 {
     public partial class frmMain : Form
     {
-        public SortedList<string, SortedList<string, string>> eventData = 
+        private SortedList<string, SortedList<string, string>> eventData = 
             new SortedList<string, SortedList<string, string>> { };
-
-      
 
         public frmMain()
         {
@@ -72,20 +70,15 @@ namespace Week_12___Travel_Extravaganza
             if (formData.Keys.Contains("date"))
             {
                 if (eventData.Keys.Contains(formData["date"]))
-                {
-                    eventData[formData["date"]] = formData;
-                }
+                { eventData[formData["date"]] = formData; }
                 else
-                {eventData.Add(formData["date"], formData);}
-                //formData["title"]
+                { eventData.Add(formData["date"], formData); }
             }
 
             else if (formData.Keys.Contains("checkIn"))
             {
                 if (eventData.Keys.Contains(formData["checkIn"]))
-                {
-                    eventData[formData["checkIn"]] = formData;
-                }
+                { eventData[formData["checkIn"]] = formData; }
                 else
                 { eventData.Add(formData["checkIn"], formData); }
 
@@ -103,12 +96,7 @@ namespace Week_12___Travel_Extravaganza
         {
             try
             {
-
-                int selectedIndex = lstItinerary.SelectedIndex;
                 string selected = lstItinerary.SelectedItem.ToString();
-
-                Debug.Print("ln66: " + selected + "\n");
-                
                 foreach (string keySelected in eventData.Keys)
                 {
                     if (selected.Contains(keySelected))
@@ -121,8 +109,7 @@ namespace Week_12___Travel_Extravaganza
 
                         if (frmEdit.DialogResult == DialogResult.OK)
                         {
-                            Debug.Print(string.Join(",", eventData[keySelected].Values));
-                            
+                            //Debug.Print(string.Join(",", eventData[keySelected].Values));
                             addItem(frmEdit);
                         }
                         break;
@@ -143,7 +130,28 @@ namespace Week_12___Travel_Extravaganza
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string selected = lstItinerary.SelectedItem.ToString();
+                Debug.Write("Selected" + selected +
+                    "\nkeys:" + string.Join("\n", eventData.Keys));
 
+                Debug.Write("line150: " + selected);
+                foreach (string keySelected in eventData.Keys)
+                {
+                    if (selected.Contains(keySelected))
+                    {
+                        Debug.Write("Selected: " + keySelected);
+                        eventData.Remove(keySelected);
+                        lstItinerary.Items.Remove(selected);
+                        break;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.Write(ex.Message);
+            }
         }
     }
 }
