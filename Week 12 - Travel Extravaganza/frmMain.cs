@@ -17,6 +17,7 @@ namespace Week_12___Travel_Extravaganza
         //    new SortedList<string, SortedList<string, string>> { };
         DataStorage resource = new DataStorage();
         
+        
 
         public frmMain()
         {
@@ -130,6 +131,11 @@ namespace Week_12___Travel_Extravaganza
             {
                 Debug.Write(ex.Message);
             }
+        }
+
+        private void btnTester_Click(object sender, EventArgs e)
+        {
+            resource.connectionTest();
         }
     }
 }

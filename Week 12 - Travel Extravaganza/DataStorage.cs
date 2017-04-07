@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Data;
+using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,8 +15,29 @@ namespace Week_12___Travel_Extravaganza
         private SortedList<string, SortedList<string, string>> masterData =
             new SortedList<string, SortedList<string, string>> { };
 
-        dbTravelDataSet dbTravel = new dbTravelDataSet();
-        
+        public void connectionTest()
+        {
+            OleDbConnection con = new OleDbConnection();
+
+            con = new OleDbConnection("Provider = Microsoft.Jet.OLEDB.4.0;" +
+                @"Data Source = C:\Users\Linc\Documents\Visual Studio 2015\Projects\" +
+                @"Week12Travel-Extravaganza\Week 12 - Travel Extravaganza\dbTravel.mdb");
+            OleDbCommand cmd = new OleDbCommand();
+            cmd.Connection = con;
+            cmd.CommandText = "select * from Main;";
+
+            con.Open(); // open the connection
+            OleDbDataReader dr = cmd.ExecuteReader();
+            //OleDbDataReader dr = cmd.ExecuteNonQuery();
+            //cmd.ExecuteNonQuery();
+            while (dr.Read())
+            {
+                Debug.Write("Key: " + dr["ID"] + ":" + dr["Item"] + "\n");
+            }
+            Debug.Write("EOF");
+            con.Close();
+            con.Close();
+        }
 
         public void addItem(Form frmEdit)
         {
