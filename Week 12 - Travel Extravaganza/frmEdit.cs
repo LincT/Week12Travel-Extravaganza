@@ -44,10 +44,6 @@ namespace Week_12___Travel_Extravaganza
                         tabData.Add("destination", txtDestinationAP.Text);
                         this.DialogResult = DialogResult.OK;
                     }
-                    else
-                    {
-
-                    }
                     break;
                 case "Hotels":
                     if (strButtonText == "Okay")
@@ -60,10 +56,6 @@ namespace Week_12___Travel_Extravaganza
                         tabData.Add("checkOut", dtpCheckOut.Text);
                         this.DialogResult = DialogResult.OK;
                     }
-                    else
-                    {
-                        // Do Nothing...
-                    }
                     break;
                 case "Events":
                     if (strButtonText == "Okay")
@@ -73,10 +65,6 @@ namespace Week_12___Travel_Extravaganza
                         tabData.Add("title", txtEventTitle.Text);
                         tabData.Add("details", txtEventDetails.Text);
                         this.DialogResult = DialogResult.OK;
-                    }
-                    else
-                    {
-
                     }
                     break;
                 default:
@@ -117,17 +105,15 @@ namespace Week_12___Travel_Extravaganza
                 }
 
             }
-            else { Debug.Write("frmEdit Null"); }
+           
         }
         public SortedList<string,string> readInput()
         {
             SortedList<string, string> inData = new SortedList<string, string> { };
             string resultDbg = "frmEdit readInput() = \n";
             foreach(KeyValuePair<string,string> pair in (SortedList<string,string>)this.Tag)
-            {
-                resultDbg += pair.Key+ ": " + pair.Value + "\n";
-            }
-            Debug.Write(resultDbg);
+            { resultDbg += pair.Key+ ": " + pair.Value + "\n"; }
+            //Debug.Write(resultDbg);
             return (SortedList<string, string>)this.Tag;
         }
     }
