@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,9 @@ namespace Week_12___Travel_Extravaganza
     {
         private SortedList<string, SortedList<string, string>> masterData =
             new SortedList<string, SortedList<string, string>> { };
+
+        dbTravelDataSet dbTravel = new dbTravelDataSet();
+        
 
         public void addItem(Form frmEdit)
         {
