@@ -5,6 +5,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -30,6 +31,10 @@ namespace Week_12___Travel_Extravaganza
             frmEdit.ShowDialog();
             resource.addItem(frmEdit);
             updateView();
+        }
+        private void apiTester()
+        {
+            
         }
         private void updateView()
         {
